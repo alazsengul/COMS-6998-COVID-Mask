@@ -1,2 +1,2 @@
 # COMS-6998-COVID-Mask
-HW 1
+Group 3 — Mask Design
