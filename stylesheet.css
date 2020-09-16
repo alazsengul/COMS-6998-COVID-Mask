@@ -11,3 +11,8 @@ body {
     *display:inline; /* ie7 fix */
     float: none; /* this is the part that makes it work */
 }
+
+.match-to-img{
+  padding-top: 20px;
+  padding-left: 80px;
+}
