@@ -1,3 +1,13 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.thumbnails-center {
+    text-align:center;
+}
+
+.thumbnails-center > li {
+    display: inline-block;
+    *display:inline; /* ie7 fix */
+    float: none; /* this is the part that makes it work */
+}
