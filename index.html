@@ -37,11 +37,7 @@
                 <div class="col-9">
 
                     <h1 class="ml13">Group 3 — Mask Design</h1>
-                    <p class="ml14" style="color:#808080">nose bridge | storage | reuse</p>
-                    <br><br>
-                    <img src="header_image.jpg" class="w-100">
-                    <br><br>
-                    <p></p>
+                    <p class="font-weight-bold ml14" style="color:#808080">Nose bridge | Storage | Reuse</p>
 
                 </div>
 
@@ -159,43 +155,6 @@
                     </p>
                     <br>
 
-                  <div class="col-9">
-                    <h6 class="font-weight-bold">INTERVIEW A: Nicole H. (South Korea)</h6>
-                    <p>
-                   <ol type="a">
-                   <li> Nicole last left home to eat dinner.  She typically uses an N95 mask.  Initially, these were supplied by the government (10/week) but are now readily available commercially.
-                    She stores her mask on a hanger next to her door of egress.</li><br>
-                   <li>Nicole notes that most people in her vicinity wear the same type of mask.  She wears a mask anytime she is not in a private space (home/car) or eating/drinking.
-                    While eating or drinking in public, the custom is to remove one ear loop and allow the mask to hang, ingest the food or drink, then re-attach the mask while chewing or swallowing the food.
-                    Further, she notes that the N95 is uncomfortable during humid weather, but gains a sense of security from masks with a built-in robust filter.</li><br>
-                    <li>Nicole will use an N95 mask a maximum of three times.
-                    If she has used the mask less than three times, she will store the mask on the hanger.  After the third time, she cuts the straps and disposes of the mask.</li><br></ol>
-                    </p>
-
-                    <h6 class="font-weight-bold">INTERVIEW B: Pierre R. (New York)</h6>
-                    <p>
-                      <ol type="a"> <li>Pierre last left home to shop for groceries.  He uses a reusable fabric mask that he purchased from a clothing retailer as part of a bulk order a friend helped organize.
-                      He keeps his mask on his desk with other frequented items, namely his wallet and phone.</li><br>
-                      <li>Pierre observes that he continually has to push his mask up to stay on his nose.  The mask will become hot after prolonged use.
-                      He uses a mask anytime he is in close proximity to someone else outside his ‘friend bubble.’  He takes off his mask while eating or drinking and running outside.
-                      He reports that most people in his vicinity wear masks, many wear blue surgical masks or bandanas, but with varying levels of proper compliance.  Often, the mask is worn below the nose.</li><br>
-                      <li>Pierre, when he returns home, will place his mask on his desk.  He washes the mask in the washing machine weekly.</li><br></ol>
-
-                    </p>
-
-                    <h6 class="font-weight-bold">INTERVIEW C: The (Tay) N. (New York)</h6>
-                    <p>
-                    <ol type="a"> <li>Tay last left home to purchase take-out dinner.  He uses various masks including blue surgical masks or a cloth mask.
-                    He keeps his mask in the same place, on a table near the entrance to his home.</li><br>
-                    <li>Tay notes that cloth masks don’t seem as breathable as surgical masks and does not like that there is no band to hold the mask on the nose in the cloth mask. He prefers the surgical mask for the flexible nose band that fits the top of the mask to the profile of his nose.
-                    Tay reports general compliance with mask usage by others in his vicinity, but does occasionally see one or two people not wearing a mask.
-                    Tay also reports most masked individuals use blue surgical masks or cloth masks.  When eating or drinking, Tay will rotate the mask down to his chin by touching the mask surface.</li><br>
-                    <li>Tay will use a blue surgical mask about 4 or 5 times before he either disposes of the mask or loses it.
-                    Alternatively, he will dispose of the mask earlier if it starts to smell odd.  Otherwise, it is stored face down.</li><br></ol>
-                    </p>
-
-                  </div>
-
                     <img class="mx-auto img-fluid w-100" src="user_journeys.jpg">
                     <br><br>
                     <p></p>
@@ -269,7 +228,7 @@
                       <ol type="a">
                         <li><p class="font-weight-bold">Nose bridge</p></li>
                         <p><li>Adjustable loops</li> </p>
-                        <p> <li>Vertical Pleating</li></p>
+                        <p> <li>Vertical pleating</li></p>
                         <p> <li>More pliable material</li></p></ol>
                       </div>
                       <br>
@@ -278,9 +237,9 @@
                       <div class="col-10">
                       <ol type="a">
                         <li>
-                        <p>Write the Start Date on the mask</p></li>
+                        <p>Write the start date on the mask</p></li>
                         <p> <li>Reminder app</p></li>
-                        <p> <li>Reminder app</p></li>
+                        <p> <li>Mask scanner</p></li>
                         <p><li>Color changing masks</p></li></ol>
                       </div>
                       <br>
@@ -288,8 +247,8 @@
                       <p><li>How might we properly store or reuse masks?</p></li>
                       <div class="col-10"> <ol type="a">
                         <li>
-                        <p class="font-weight-bold">Storage Container</p></li>
-                        <p class="font-weight-bold"><li>Mask storage bag while eating</p></li>
+                        <p class="font-weight-bold">Storage container</p></li>
+                        <p><li><b>Mask storage bag while eating</b></p></li>
                         <p> <li>Mask pocket for shirt or purse</li>
                         <p> <li>Mask with anti-microbial touchpoints</p></li></ol>
                       </div>
@@ -300,7 +259,7 @@
 
                 </div>
 
-                    
+
 
             </div>
 
@@ -384,34 +343,3 @@
     </body>
 
 </html>
-
-<script>
-    // Wrap every letter in a span
-    var textWrapper = document.querySelector('.ml13');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline({loop: false})
-    .add({
-        targets: '.ml13 .letter',
-        translateY: [100,0],
-        translateZ: 0,
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 1400,
-        delay: (el, i) => 300 + 30 * i
-    })
-
-    var textWrapper2 = document.querySelector('.ml14');
-    textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-    anime.timeline({loop: false})
-    .add({
-        targets: '.ml14 .letter',
-        translateY: [100,0],
-        translateZ: 0,
-        opacity: [0,1],
-        easing: "easeOutExpo",
-        duration: 1400,
-        delay: (el, i) => 300 + 30 * i
-    })
-</script>
