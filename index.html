@@ -13,7 +13,7 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
         <!-- stylesheets -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
@@ -23,6 +23,7 @@
         <!-- scripts are if needed -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     </head>
   </div>
@@ -35,8 +36,8 @@
 
                 <div class="col-9">
 
-                    <h3 class="font-weight-bold mt-5">Group 3 — Mask Design</h3>
-                    <p style="color:#808080">nose bridge | storage | reuse<br></p>
+                    <h1 class="ml13">Group 3 — Mask Design</h1>
+                    <p class="ml14" style="color:#808080">nose bridge | storage | reuse</p>
                     <br><br>
                     <img src="header_image.jpg" class="w-100">
                     <br><br>
@@ -383,3 +384,34 @@
     </body>
 
 </html>
+
+<script>
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml13');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: false})
+    .add({
+        targets: '.ml13 .letter',
+        translateY: [100,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: (el, i) => 300 + 30 * i
+    })
+
+    var textWrapper2 = document.querySelector('.ml14');
+    textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: false})
+    .add({
+        targets: '.ml14 .letter',
+        translateY: [100,0],
+        translateZ: 0,
+        opacity: [0,1],
+        easing: "easeOutExpo",
+        duration: 1400,
+        delay: (el, i) => 300 + 30 * i
+    })
+</script>
